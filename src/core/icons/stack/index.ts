@@ -1,0 +1,16 @@
+export { default as ReactIcon } from "./React";
+export { default as AngularIcon } from "./Angular";
+export { default as BootstrapIcon } from "./Bootstrap";
+export { default as CssIcon } from "./Css";
+export { default as GitIcon } from "./Git";
+export { default as GithubIcon } from "./Github";
+export { default as HtmlIcon } from "./Html";
+export { default as JavaIcon } from "./Java";
+export { default as JavaScriptIcon } from "./JavaScript";
+export { default as MySQLIcon } from "./MySQL";
+export { default as NodeIcon } from "./Node";
+export { default as PostgreSQLIcon } from "./PostgreSQL";
+export { default as SpringBootIcon } from "./SpringBoot";
+export { default as TailwindIcon } from "./Tailwind";
+export { default as SQLServerIcon } from "./SQLServer";
+export { default as FigmaIcon } from "./Figma";

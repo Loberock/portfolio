@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0d0d0d; /* Negro carbón para el fondo principal */
+  --bg-secondary: #1a1a1a; /* Gris oscuro para cards, navbar con scroll y footer */
+
+  /* 2. TEXTOS (Typography) */
+  --text-primary: #eaeaea; /* Blanco suave para títulos (h1, h2, h3) */
+  --text-secondary: #b3b3b3; /* Gris claro para párrafos (p) y texto normal */
+  --text-keyword: #75f5d3; /* Turquesa pálido para resaltar palabras clave (span) */
+  --text-disabled: #555555; /* Gris oscuro para placeholders o texto inactivo */
+
+  /* 3. ACENTOS Y MARCA (Accent & Brand) */
+  --accent-primary: #12e1b3; /* Turquesa vibrante para botones (button) y enlaces (a) */
+  --accent-secondary: #171c71; /* Azul profundo para usar en gradientes o detalles */
+
+  /* 4. OTROS (Bordes y Sombras) */
+  --border-subtle: #2f2f2f; /* Borde sutil para separar elementos */
+
+  --shadow-interactive: rgba(18, 225, 179, 0.3);
+  --shadow-card: rgba(23, 28, 113, 0.4);
+
+  /* 5. CARDS */
+  --card-glass-bg: rgba(26, 26, 26, 0.3);
+  --card-glass-border: rgba(47, 47, 47, 0.5);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-primary);
+}
+
+.keyword {
+  color: var(--text-keyword);
+  text-shadow: 0 0 10px var(--shadow-interactive);
+}

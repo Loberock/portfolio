@@ -1,0 +1,40 @@
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 0.6rem;
+}
+
+.social-link:hover {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px var(--shadow-interactive);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive ajustado */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 0.8rem;
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}

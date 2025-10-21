@@ -1,0 +1,79 @@
+.section-hero {
+  background: radial-gradient(circle, var(--bg-secondary), var(--bg-primary));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.title-hero {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle-hero {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.text-hero {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.btn-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-hero,
+.cv-hero {
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-primary);
+}
+
+.cta-hero {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+.cv-hero {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+/* Efectos Hover */
+.cta-hero:hover,
+.cv-hero:hover {
+  box-shadow: 0 0 25px var(--shadow-interactive);
+  transform: translateY(-3px);
+}
+
+.cv-hero:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}

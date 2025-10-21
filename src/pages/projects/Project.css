@@ -1,0 +1,184 @@
+.section-projects {
+  background-color: var(--bg-primary);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Reutilizamos .section-container de la sección de servicios */
+.section-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-projects {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  text-align: center;
+}
+
+.subtitle-projects {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+/* El contenedor de la lista de proyectos */
+.projects-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Reducimos un poco el gap vertical para un look más compacto */
+  width: 100%;
+}
+
+/* La tarjeta principal de cada proyecto */
+.project-spotlight-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(
+    --bg-secondary
+  ); /* El fondo se mueve a la tarjeta principal */
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s ease;
+
+  /* ¡CAMBIO CLAVE! La sombra ahora se aplica a toda la tarjeta */
+  box-shadow: 0 10px 30px var(--shadow-card);
+}
+
+.project-spotlight-card:hover {
+  transform: translateY(-8px);
+  /* Intensificamos la sombra con el color de acento al pasar el mouse */
+  box-shadow: 0 0 40px var(--shadow-interactive);
+  border-color: var(--accent-primary);
+}
+
+/* Contenedor de la imagen */
+.project-image-wrapper {
+  flex: 1.2;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  /* La sombra de aquí se ha movido a .project-spotlight-card */
+}
+
+.project-image-wrapper:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-status-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--accent-secondary);
+  background-color: var(--card-glass-bg);
+  backdrop-filter: blur(5px);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Contenedor de los detalles del proyecto */
+.project-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: var(--bg-primary);
+  color: var(--text-keyword);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  flex-grow: 1; /* Hace que ambos botones ocupen el mismo espacio */
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+.project-link.secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px var(--shadow-interactive);
+}
+
+.project-link.secondary:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent-primary);
+  box-shadow: none; /* Quitamos la sombra para el botón secundario */
+}
+
+/* === RESPONSIVIDAD === */
+@media (max-width: 992px) {
+  /* Un punto de quiebre un poco más grande */
+  .project-spotlight-card {
+    flex-direction: column;
+  }
+
+  .project-details {
+    align-items: center;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+}
