@@ -6,7 +6,7 @@ const projectsData = [
     description:
       "El objetivo de este proyecto era crear un punto de acceso digital claro y atractivo para nuevos estudiantes. Desarrollé una landing page totalmente responsiva utilizando HTML semántico, CSS y JavaScript puro, enfocándome en una estructura de información intuitiva. El resultado es una página de carga rápida que guía al usuario de manera eficiente desde la oferta académica hasta el proceso de inscripción, asegurando una experiencia fluida en cualquier dispositivo.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "src/assets/img/projects/cedp.png",
+    imageUrl: "../../assets/img/projects/cedp.png",
     liveUrl: "https://loberock.github.io/cedp-project/index.html",
     repoUrl: "",
     status: "Terminado",
@@ -16,7 +16,7 @@ const projectsData = [
     description:
       "Para este proyecto, el reto era capturar la esencia moderna de la barbería y transformarla en una experiencia digital. Construí una Single Page Application (SPA) con React y TailwindCSS, creando una interfaz dinámica y con un diseño pulcro. La página está optimizada para el rendimiento y permite a los clientes explorar servicios, productos y agendar citas de forma sencilla, convirtiendo visitantes en clientes recurrentes.",
     technologies: ["React", "TailwindCSS"],
-    imageUrl: "src/assets/img/projects/infinity-style.png",
+    imageUrl: "../../assets/img/projects/infinity-style.png",
     liveUrl: "https://infinity-style.vercel.app/",
     repoUrl: "",
     status: "Terminado",
@@ -33,7 +33,7 @@ const projectsData = [
       "MySQL",
       "JWT",
     ],
-    imageUrl: "src/assets/img/projects/cedpsac.png",
+    imageUrl: "../../assets/img/projects/cedpsac.png",
     liveUrl: "",
     repoUrl: "",
     status: "En Progreso",
